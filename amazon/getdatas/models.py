@@ -18,6 +18,6 @@ class Data(models.Model):
     AMAZON_FEE = models.FloatField(blank=True ,null=True)
     KAR = models.FloatField(blank=True , null=True)
     YUZDELIK_KAR = models.FloatField(blank=True , null=True)
-
+    #veritabanı için isimlendirme
     def __str__(self):
         return self.SATICI_SIPARIS_NUMARASI
