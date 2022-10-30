@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 ###VERİTABANI MODELLERİ
 class Data(models.Model):
     uuid = models.UUIDField( unique=True, editable=False , null=True , blank = True)
+    #OneToMany Relationship 
     KULLANICI = models.ForeignKey(User , blank=True , null=True , on_delete = models.CASCADE)
     
     TARIH = models.DateField(null=True , blank=True)
