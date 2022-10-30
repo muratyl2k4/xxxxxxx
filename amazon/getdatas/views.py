@@ -36,6 +36,7 @@ def home(request):
         for x in order_date_text:
             order_date = re.findall('(?<=: )(.*)', x)
             for od in order_date:
+                #string to datetime object
                 datetime_object = datetime.strptime(od[0:len(od)-1], "%d-%b-%Y")
                 print(datetime_object)
         #PRICE
